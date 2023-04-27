@@ -1,0 +1,40 @@
+$ratingTextBgColor: hsl(210, 21%, 20%);
+$fwLarge: 700;
+
+$fwLarge: 700;
+$fwSmall: 400;
+
+$fs-small: 0.938rem;
+$fs-large: 1.625rem;
+
+//We use a root for the hsl values so we can easily play around with the hsla alpha property
+//Using sass variables doensnt seem to work for this funcitonality.
+:root{
+    --rating-text-colors: 25, 97%, 53%;
+    --p-text-colors: 0, 0%, 100%;
+}
+
+.thankyou-container{
+    img{
+        max-width: 10rem;
+        width:100%;
+        height: auto;
+    }
+    .rating-text{
+        background-color: $ratingTextBgColor;
+        color: hsla(var(--rating-text-colors),0.7);
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        output{
+        }
+    }
+    h2{
+        font-weight: $fwLarge;
+        font-size: $fs-large;
+    }
+    p{
+        color: hsla(var(--p-text-colors),0.6);
+        font-weight: $fwLarge;
+    }
+}

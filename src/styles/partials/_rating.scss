@@ -1,0 +1,63 @@
+$starBgColor: hsl(210, 19%, 18%);
+
+$pColor: hsl(221, 8%, 60%);
+
+$ratingBtnBgColor: hsl(210, 19%, 18%);
+$ratingBtnhoverBgColor: hsl(214, 12%, 54%);
+
+$submitBtnBgColor: hsl(25, 97%, 53%);
+
+$white: white;
+
+$fwLarge: 700;
+$fwSmall: 400;
+
+$fs-small: 0.938rem;
+$fs-large: 1.625rem;
+
+.rating-container{
+    .img-star{
+        //Need !important to overwrite next/image component styles
+        background-color: $starBgColor;
+    }
+    h1{
+        font-weight: $fwLarge;
+        font-size: $fs-large;
+    }
+    p{
+        color: $pColor;
+        font-size: $fs-small;
+    }
+    .ratings-container{
+        .rating{
+            width: 3.25rem;
+            height: 3.25rem;
+            background-color: $ratingBtnBgColor;
+            color: $pColor;
+            font-weight: $fwLarge;
+            &:hover{
+                background-color: $ratingBtnhoverBgColor;
+                color: $white;
+            }
+            &:focus{
+                background-color: $white;
+                color: $submitBtnBgColor;
+            }
+        }
+    }
+    .submit-btn{
+        background-color: $submitBtnBgColor;
+        color: $white;
+        font-weight: $fwLarge;
+        letter-spacing: 3px;
+        font-size: $fs-small;
+        &:hover{
+            background-color: $white;
+            color: $submitBtnBgColor;
+        }
+        &:focus{
+            background-color: $white;
+            color: $submitBtnBgColor;
+        }
+    }
+}

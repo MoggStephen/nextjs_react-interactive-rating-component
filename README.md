@@ -1,20 +1,24 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
 ## Getting Started
 
-First, run the development server:
-
-```bash
+npm install --save-dev sass
+npm install bootstrap
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+Open [http://localhost:3000](http://localhost:3000). You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Firstly import bootstrap bundled scss and js in pages/_app.js
+Found an issue with importing bootstrap js files and found the fix to use the useEffect hook to require the bootstrap js files in _app.js. ["https://blog.logrocket.com/handling-bootstrap-integration-next-js/"]. This error is due to the document object not being available untill the page loads due to next.js server side rendering by default feature.
+Change globals to scss file in and update pages/_app.js import
+Add sass partials for rating, thankyou and main.
+import partials into globals. use rules go first!
+When importing a google font make sure to add to the end '&display:swap'. So the browser displays a font whilst this font is being loaded!
+Create components/index/ and add all components needed!
+Dont need home.module.css as we are not using modules in this project.
+Need a state in main component to be able to change to the thankyou component! This is passed down with props so child components can change the value to re-render the main component and change to the thankyou component! We also need a state variable for the selectdRating that gets passed from the rating component to the main component!
+rating component doesnt need to rerender so we use a normal variable here.
+From here we can just style our components using the partials we have setup!
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+
+
 
 [API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
 

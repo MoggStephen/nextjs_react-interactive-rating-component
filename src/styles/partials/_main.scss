@@ -1,0 +1,22 @@
+$darkBackgroundColor: hsl(228, 11%, 9%);
+$gradient-color: hsl(225, 19%, 12%);
+$gradient-color2: hsl(215, 20%, 17%);
+$white: white;
+
+$offset: 50%;
+
+
+.rating-component-container{
+    max-width: 25.75rem;
+    width: 100%;
+    min-height: 26.375rem;
+
+    //Center container
+    position: absolute;
+    top: $offset;
+    left: $offset;
+    transform: translate(-$offset, -$offset);
+
+    background: linear-gradient($gradient-color2, $gradient-color);
+    color: $white;
+}
