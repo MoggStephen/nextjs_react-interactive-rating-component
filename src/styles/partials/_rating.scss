@@ -40,8 +40,13 @@ $fs-large: 1.625rem;
                 color: $white;
             }
             &:focus{
-                background-color: $white;
-                color: $submitBtnBgColor;
+                background-color: $submitBtnBgColor;
+                color: $white;
+                outline: 0;
+            }
+            @media (max-width: 576px) {
+                width: 2.625rem;
+                height: 2.625rem;
             }
         }
     }
@@ -58,6 +63,7 @@ $fs-large: 1.625rem;
         &:focus{
             background-color: $white;
             color: $submitBtnBgColor;
+            outline: 0;
         }
     }
 }

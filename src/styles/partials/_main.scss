@@ -19,4 +19,8 @@ $offset: 50%;
 
     background: linear-gradient($gradient-color2, $gradient-color);
     color: $white;
+    @media (max-width: 576px) {
+        max-width: 20.625rem;
+        min-height: 22.5rem;
+    }
 }
