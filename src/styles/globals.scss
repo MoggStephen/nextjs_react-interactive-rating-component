@@ -3,8 +3,8 @@
 @use './partials/thankyou';
 @use './partials/main';
 
+//Vercel live site doesnt seem to use this font when it is imported here. It works when put in the head component as a link!
 //@import url("https://fonts.googleapis.com/css?family=Overpass:400,700&display=swap");
-
 
 $darkBgColor: hsl(228, 11%, 9%);
 
