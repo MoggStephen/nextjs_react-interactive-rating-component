@@ -56,6 +56,7 @@ rating component doesnt need to rerender so we use a normal variable here.
 - I try to prioritize using bootstrap classes first though.
 - To get the responsiveness i use bootstrap breakpoints and media queries at the same breakpoints in my partials!
 - Use of display:swap in google font to ensure lighthouse likes the webpage!
+- when importing google font into next.js with link. Do this in the _document. Next.js reccomends it there!
 
 ### Built with
 
