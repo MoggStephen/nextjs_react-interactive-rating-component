@@ -20,6 +20,9 @@ export default function Main(){
 
     return(
         <> 
+            {/* Couldnt get @import in globals.scss to import this and work in the vercel live deployment site. Doing it here fixed it! and made next.js happy*/}
+            <link href="https://fonts.googleapis.com/css?family=Overpass:400,700&display=swap" rel="stylesheet"/>
+            
             <main className="rating-component-container p-4 rounded-5">
                 {/* Ternary conditional rendering statement. Use this more often! */}
                 {showThankYou ? <ThankYou rating={selectedRating}/> : <HowDidWeDo onSubmit={handleRatingSubmit} />}

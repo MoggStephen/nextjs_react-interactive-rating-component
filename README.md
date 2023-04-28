@@ -70,7 +70,6 @@ rating component doesnt need to rerender so we use a normal variable here.
 - [React](https://reactjs.org/) - JS library
 - [Next.js](https://nextjs.org/) - React framework
 
-
 ### What I learned
 
 - How to incorporate bootstrap into a next.js project.
