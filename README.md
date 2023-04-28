@@ -1,5 +1,5 @@
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/MoggStephen/nextjs_react-interactive-rating-component]
+- Live Site URL: [https://nextjs-react-interactive-rating-component-euhgdmth8-moggstephen.vercel.app/]
 
 # Frontend Mentor - Interactive rating component solution
 
